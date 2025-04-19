@@ -1,5 +1,8 @@
 import cv2
 import mediapipe as mp
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from app.gesture_predictor import predict_gesture
 from app.speech_output import speak
 from utils.grammar_corrector import correct_grammar
